@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div ng-repeat="task in completeTasksList track by $index ">
+                <div class="well ">
+                    <h3>{{task.Name}}</h3>
+                    <p>{{task.Description}}</p>
+                    <p>
+                        <a class="btn btn-primary btn-lg " role="button " href="#!Tasks/{{task.id}}">Contribute</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>
